@@ -1,0 +1,42 @@
+/* src/App.css (Temizlenmiş Hali) */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  margin: 0;
+
+  /* YENİ ORTALAMA KOMUTLARI */
+  display: flex; /* Flex konteyner yap */
+  justify-content: center; /* Yatayda ortala */
+  align-items: center; /* Dikeyde ortala */
+  min-height: 100vh; /* Ekranın tam yüksekliğini kapla */
+
+
+  /* Temel ve en önemli satır */
+  user-select: none; 
+
+  /* Çapraz tarayıcı desteği için ön ekler (eski tarayıcılar için) */
+  -webkit-user-select: none; /* Chrome, Safari */
+}
+
+.container {
+  max-width: 1100px; /* Biraz genişletelim */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+header {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin: 0;
+}
