@@ -1,7 +1,11 @@
 
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8080/api/v1/parking';
+// Eski: const API_BASE_URL = "http://localhost:8080/api/v1/parking";
+
+// YENİ VE DOĞRU YAKLAŞIM: Ortam değişkenini kullan
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8080/api/v1/parking";
+
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
